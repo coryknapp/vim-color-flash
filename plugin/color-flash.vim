@@ -9,7 +9,7 @@ let g:loaded_color_flash = 1
 
 noremap gC :call ColorFlash( <cword> )<CR>
 
-function! ColorFlash()
+function! ColorFlash(...)
 
 " get current word
 let s:word = a:0
