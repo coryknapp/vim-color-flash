@@ -1,6 +1,12 @@
 " #FF00AA
 " #ABCDEF
 " blue 
+
+if exists('g:loaded_color_flash') || &cp
+  finish
+endif
+let g:loaded_color_flash = 1
+
 noremap gC :call ColorFlash()<CR>
 
 function! ColorFlash()
