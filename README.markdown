@@ -28,4 +28,4 @@ So far it's only been tested on exactly one configuration of Mac OS X only.
 
 ## License
 
-TODO: Write license
+Copyright (c) Tim Pope. Distributed under the same terms as Vim itself. See :help license.
