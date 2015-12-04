@@ -28,4 +28,4 @@ So far it's only been tested on exactly one configuration of Mac OS X only.
 
 ## License
 
-Copyright (c) Tim Pope. Distributed under the same terms as Vim itself. See :help license.
+Copyright (c) Cory Knapp. Distributed under the same terms as Vim itself. See :help license.
