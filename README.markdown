@@ -8,7 +8,7 @@ I've tested it with [Vundle](https://github.com/VundleVim/Vundle.vim) but there 
 nothing too weird here that any plugin manager can't handle.
 
 We use python, but I don't think you need vim with python, as the python calls
-are done through a vim system(...) call.
+are done through a vim `system(...)` call.
 
 ## Usage
 
@@ -18,7 +18,8 @@ includes hexadecimal and named colors.
 
 ## Contributing
 
-So far it's only been tested on exactly one configuration of Mac OS X only.
+So far it's only been tested on exactly one configuration of Mac OS X only.  I'd
+love to get some feed back on how well or it works, if at all.
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
