@@ -4,8 +4,9 @@ Quickly display the color under the current word.
 
 ## Installation
 
-I've tested it with [Vundle](https://github.com/VundleVim/Vundle.vim) but there is
-nothing too weird here that any plugin manager shouldn't be able to handle.
+I've tested it with [Vundle](https://github.com/VundleVim/Vundle.vim) but I
+don't think there is anything too weird here that any plugin manager shouldn't
+be able to handle.
 
 We use python, but I don't think you need vim with python, as the python calls
 are done through a vim `system(...)` call.
