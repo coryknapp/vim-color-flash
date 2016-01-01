@@ -2,6 +2,9 @@
 
 Quickly display the color under the current word.
 
+Check out the demo on youtube.
+[![](http://img.youtube.com/vi/hjayIGM2GeI/0.jpg)](http://www.youtube.com/watch?v=hjayIGM2GeI)
+
 ## Installation
 
 I've tested it with [Vundle](https://github.com/VundleVim/Vundle.vim) but I
