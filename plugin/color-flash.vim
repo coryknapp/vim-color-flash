@@ -2,8 +2,8 @@
 " #ABCDEF
 " blue 
 
-if exists('g:loaded_color_flash') || &cp
-"  finish
+if exists('g:loaded_color_flash') || v:version < 700|| &cp
+   finish
 endif
 let g:loaded_color_flash = 1
 
