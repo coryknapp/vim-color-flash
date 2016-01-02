@@ -2,8 +2,8 @@
 " #ABCDEF
 " blue 
 
-if exists('g:loaded_color_flash') || &cp
-"  finish
+if exists('g:loaded_color_flash') || v:version < 700|| &cp
+  finish
 endif
 let g:loaded_color_flash = 1
 
@@ -11,11 +11,12 @@ let g:loaded_color_flash = 1
 " have to do it in advance
 let s:script_path = expand('<sfile>:p:h').'/flash.py'
 
-noremap gC :call ColorFlash( expand('<cword>') )<CR>
+nnoremap <silent> <Plug>(colorflash-gc) :<C-u>call ColorFlash(expand('<cword>'))<CR>
+nmap gC <Plug>(colorflash-gc)
 
 function! ColorFlash(...)
-	" get current word
-	let s:word = a:1
-	let s:output = system("python ".s:script_path." \"".s:word."\"")
-	echom s:output
+  " get current word
+  let s:word = a:1
+  let s:output = system("python ".s:script_path." \"".s:word."\"")
+  echom s:output
 endfunction
