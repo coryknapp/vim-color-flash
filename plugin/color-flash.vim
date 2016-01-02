@@ -11,7 +11,8 @@ let g:loaded_color_flash = 1
 " have to do it in advance
 let s:script_path = expand('<sfile>:p:h').'/flash.py'
 
-noremap gC :call ColorFlash( expand('<cword>') )<CR>
+nnoremap <silent> <Plug>(colorflash-gc) :<C-u>call ColorFlash( expand('<cword>') )<CR>
+nmap gC <Plug>(colorflash-gc)
 
 function! ColorFlash(...)
   " get current word
