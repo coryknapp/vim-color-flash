@@ -11,12 +11,18 @@ let g:loaded_color_flash = 1
 " have to do it in advance
 let s:script_path = expand('<sfile>:p:h').'/flash.py'
 
+"set a default time-out value, if the user hasn't set one
+if !exists('g:vim_color_flash_timeout')
+	let g:vim_color_flash_timeout = 1
+endif
+
 nnoremap <silent> <Plug>(colorflash-gc) :<C-u>call ColorFlash(expand('<cword>'))<CR>
 nmap gC <Plug>(colorflash-gc)
 
 function! ColorFlash(...)
   " get current word
   let s:word = a:1
-  let s:output = system("python ".s:script_path." \"".s:word."\"")
+	let s:output = system(
+		\ "python ".s:script_path." \"".s:word."\" ".g:vim_color_flash_timeout)
   echom s:output
 endfunction

@@ -51,7 +51,7 @@ try:
     validate_color_string( argv[1] )
     canvas.create_rectangle(0 , 0, 200, 50, fill=argv[1])
     top.wm_attributes("-topmost", 1)
-    top.after(1000, lambda: top.destroy())
+    top.after(1000 * int(argv[2]), lambda: top.destroy())
     top.mainloop()
 except InvalidColorError as e:
     print e.arg
