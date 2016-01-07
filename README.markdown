@@ -15,7 +15,8 @@ be able to handle.
 We use python, but I don't think you need vim with python, as the python calls
 are done through a vim `system(...)` call.
 
-I've tested this on Mac OS X and MacVim, and on nothing else.
+I've tested this on Mac OS X and MacVim, others have tested it on windows and
+have found it to work (Thanks @zQueal).
 
 ## Usage
 
